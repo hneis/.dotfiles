@@ -3,9 +3,10 @@
 # This script is called by i3 on startup.
 
 # set the keyboard to mac
-setxkbmap us mac
+# setxkbmap -layout us,ru
 
 # maps caps lock to escape for vim (and ctrl)
-setxkbmap -option 'caps:ctrl_modifier' && xcape -e 'Caps_Lock=Escape' &
+setxkbmap -layout us,ru -option 'grp:alt_space_toggle,caps:ctrl_modifier,grp_led:caps' && xcape -e 'Caps_Lock=Escape' &
+
 
 xmodmap ~/.Xmodmap
