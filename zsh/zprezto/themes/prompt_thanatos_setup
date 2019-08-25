@@ -11,6 +11,8 @@ pmodload 'helper'
 # TODO not even remotely finished...
 #
 
+pyevent_shell=''
+
 function prompt_thanatos_pwd
 {
     # Tell prezto we can manage this prompt
@@ -25,6 +27,11 @@ function prompt_thanatos_pwd
 	else # pwd needs truncation
 		prompt_thanatos_current_dir="${prompt_thanatos_color_pwd}%F{15}%~%f% "
 	fi
+}
+
+function prompt_pyenv_shell
+{
+    pyevent_shell=${VIRTUAL_ENV:t}
 }
 
 #
@@ -174,6 +181,7 @@ function prompt_thanatos_setup
 	add-zsh-hook preexec prompt_thanatos_preexec
 	add-zsh-hook precmd prompt_thanatos_precmd
 	#add-zsh-hook chpwd prompt_thanatos_chpwd
+	add-zsh-hook precmd prompt_pyenv_shell
 
 	#
 	# Colors
@@ -367,9 +375,9 @@ function prompt_thanatos_setup
 
 	if (( $SHLVL == 1 ))
 	then
-		export PROMPT='${prompt_thanatos_altchar_enable}${prompt_thanatos_color_prompt}${prompt_thanatos_lower_left_corner}${editor_info[keymap]}'
+		export PROMPT='${prompt_thanatos_altchar_enable}${prompt_thanatos_color_prompt}${prompt_thanatos_lower_left_corner}[${pyevent_shell}]${editor_info[keymap]}'
 	else
-		export PROMPT='${prompt_thanatos_color_prompt}${prompt_thanatos_lower_left_corner}(${cyan}$SHLVL${prompt_thanatos_color_prompt})${editor_info[keymap]}'
+        export PROMPT='${prompt_thanatos_color_prompt}${prompt_thanatos_lower_left_corner}[${pyevent_shell}](${cyan}$SHLVL${prompt_thanatos_color_prompt})${editor_info[keymap]}'
 	fi
 
 	export RPROMPT='${editor_info[alternate]}${editor_info[overwrite]}${prompt_thanatos_return_code}${prompt_thanatos_number_jobs}${prompt_thanatos_current_time}%(?.${prompt_thanatos_color_prompt}.${red})'
