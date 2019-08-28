@@ -118,4 +118,8 @@ URxvt*tabbedex.tab-bg: 236
 URxvt*tabbedex.transparent:true
 URxvt*tabbedex.new-button: false
 
-URxvt*letterSpace: -1
+URxvt.letterSpace: -1
+
+!! For the Ctrl+Shift bindings work
+URxvt.iso14755: false
+URxvt.iso14755_52: false
