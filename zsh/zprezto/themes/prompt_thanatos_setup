@@ -373,6 +373,9 @@ function prompt_thanatos_setup
 	#   SUDO_PS1 | Backup root prompt
 	#
 
+  # Tell prezto we can manage this prompt
+  zstyle ':prezto:module:prompt' managed 'yes'
+
 	if (( $SHLVL == 1 ))
 	then
 		export PROMPT='${prompt_thanatos_altchar_enable}${prompt_thanatos_color_prompt}${prompt_thanatos_lower_left_corner}[${pyevent_shell}]${editor_info[keymap]}'
