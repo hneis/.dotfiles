@@ -164,10 +164,10 @@ bindsym $mod+Ctrl+j workspace next
 bindsym $mod+Ctrl+k workspace prev
 
 # split in horizontal orientation
-bindsym $mod+Ctrl+h split v;exec notify-send 'tile vertically'
+bindsym $mod+Ctrl+v split v;exec notify-send 'tile vertically'
 
 # split in vertical orientation
-bindsym $mod+Ctrl+v split h;exec notify-send 'tile horizontally'
+bindsym $mod+Ctrl+h split h;exec notify-send 'tile horizontally'
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
