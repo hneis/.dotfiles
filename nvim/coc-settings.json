@@ -46,5 +46,21 @@
     "coc.preferences.formatOnSaveFiletypes": ["go", "clojure", "php"],
     "coc.preferences.hoverTarget": "float",
 
+    "diagnostic.errorSign"  : "ﮊ",
+    "diagnostic.warningSign": "",
+    "diagnostic.infoSign"   : "",
+    "diagnostic.hintSign"   : "ﯦ",
+    "suggest.snippetIndicator": "",
+    "suggest.echodocSupport": true,
+    "suggest.maxCompleteItemCount": 20,
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "eslint.autoFixOnSave": true,
+    "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", 
+        "typescript.tsx", "vue" ],
+    "vetur.validation.template": false,
+    "coc.preferences.formatOnSaveFiletypes": ["go", "javascript", "typescript", "typescriptreact", "json",
+        "javascriptreact", "typescript.tsx"],
+    "coc.preferences.hoverTarget": "float",
     "html.format.enable": true
 }
