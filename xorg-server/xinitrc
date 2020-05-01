@@ -8,7 +8,9 @@ urxvtd -o -q -f
 # trap 'test -n "$SSH_AUTH_SOCK" && eval `/usr/bin/ssh-agent -k`' 0
 
 # maps caps lock to escape for vim 
-e setxkbmap -option 'caps:ctrl_modifier' && xcape -e 'Caps_Lock=Escape' &
+# e setxkbmap -option 'caps:ctrl_modifier' && xcape -e 'Caps_Lock=Escape' &
+xkbcomp $HOME/.dotfiles/xorg-server/xkb.config $DISPLAY
+xcape -t 500 -e "ISO_Level3_Shift=Escape"
 # personnalized keyboard keys for sound
 xmodmap ~/.Xmodmap
 
