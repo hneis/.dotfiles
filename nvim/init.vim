@@ -11,6 +11,11 @@ augroup END
 " +----------------+
 
 source $VIMCONFIG/init_plugins.vim
+" Plugin Config ---------------------- {{{
+
+" +---------------+
+" | plugin config |
+" +---------------+
 
 " source every plugin configs
 for file in split(glob("$VIMCONFIG/pluggedconf/*.nvimrc"), '\n')
@@ -58,6 +63,7 @@ let g:coc_global_extensions = [
             \ 'coc-php-cs-fixer',
             \ 'coc-pyright',
             \ 'coc-metals',
+            \ 'coc-vetur',
             \]
 
 " \ 'coc-snippets',
@@ -226,7 +232,7 @@ iabbrev <expr> cdate strftime('%Y-%m-%d') "current date
 " +--------------+
 
 " colorscheme
-colorscheme hypnos
+"colorscheme hypnos
 
 " no swap file
 set noswapfile
@@ -315,6 +321,11 @@ set shada=!,'100,<50,s100,h
 
 " I save too often... Even if Vim never crash. Try to stop that
 " autocmd BufWrite * echom "Save only from time to time!"
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 " autocmd vimrc FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
@@ -323,3 +334,7 @@ set shada=!,'100,<50,s100,h
 " endif
 
 " }}}
+
+execute 'source' '~/.dotfiles/nvim/pluggedconf/hneis.nvimrc'
+autocmd BufEnter *.{vue,js,ts,jsx,tsx} :syntax sync fromstart
+:set redrawtime=10000
