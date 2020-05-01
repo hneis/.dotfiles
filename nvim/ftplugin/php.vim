@@ -9,7 +9,7 @@ for file in split(glob("~/nvim/pluggedconf/php/*.nvimrc"), '\n')
 endfor
 
 " write ctags each time we save files (& for asynchronously)
-autocmd php BufWritePost *.php silent! !eval '[ -f ".git/hooks/ctags" ] && .git/hooks/ctags' &
+autocmd php BufWritePost *.php silent! !eval '[ -f "`git rev-parse --git-dir`/hooks/ctags" ] && `git rev-parse --git-dir`/hooks/ctags' &
 
 " php docs
 let g:pdv_template_dir = $HOME ."/nvim/plugged/pdv/templates_snip"
