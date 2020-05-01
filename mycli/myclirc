@@ -1,4 +1,3 @@
-# vi: ft=dosini
 [main]
 
 # Enables context sensitive auto-completion. If this is disabled the all
@@ -82,58 +81,64 @@ keyword_casing = auto
 
 # disabled pager on startup
 enable_pager = True
-
-# Custom colors for the completion menu, toolbar, etc.
 [colors]
-# Completion menus.
-Token.Menu.Completions.Completion.Current = "bg:ansired ansiwhite bold"
-Token.Menu.Completions.Completion = "bg:ansigray ansiwhite"
-Token.Menu.Completions.Meta.Current = "bg:ansiyellow ansigray"
-Token.Menu.Completions.Meta = "bg:ansigray ansiwhite"
-Token.Menu.Completions.MultiColumnMeta = "bg:ansigray ansiwhite"
-Token.Menu.Completions.ProgressButton = "bg:ansiblack"
-Token.Menu.Completions.ProgressBar = "bg:ansiblue"
-Token.SelectedText = "ansiwhite bg:ansiblue"
-Token.SearchMatch = "ansiwhite bg:ansiblue"
-Token.SearchMatch.Current = "ansiwhite bg:ansired"
-Token.Toolbar = "ansiwhite"
-Token.Toolbar.Off = "ansigray"
-Token.Toolbar.On = "bg:ansiblack ansiwhite"
+completion-menu.completion.current = "bg:#ffffff #000000"
+completion-menu.completion = "bg:#008888 #ffffff"
+completion-menu.meta.completion.current = "bg:#44aaaa #000000"
+completion-menu.meta.completion = "bg:#448888 #ffffff"
+completion-menu.multi-column-meta = "bg:#aaffff #000000"
+scrollbar.arrow = "bg:#003333"
+scrollbar = "bg:#00aaaa"
+selected = "#ffffff bg:#6666aa"
+search = "#ffffff bg:#4444aa"
+search.current = "#ffffff bg:#44aa44"
+bottom-toolbar = "bg:#222222 #aaaaaa"
+bottom-toolbar.off = "bg:#222222 #888888"
+bottom-toolbar.on = "bg:#222222 #ffffff"
+search-toolbar = noinherit bold
+search-toolbar.text = nobold
+system-toolbar = noinherit bold
+arg-toolbar = noinherit bold
+arg-toolbar.text = nobold
+bottom-toolbar.transaction.valid = "bg:#222222 #00ff5f bold"
+bottom-toolbar.transaction.failed = "bg:#222222 #ff005f bold"
+
+# style classes for colored table output
+output.header = "#00ff5f bold"
+output.odd-row = ""
+output.even-row = ""
+Token.Menu.Completions.Completion.Current = bg:ansired ansiwhite bold
+Token.Menu.Completions.Completion = bg:ansigray ansiwhite
+Token.Menu.Completions.Meta.Current = bg:ansiyellow ansigray
+Token.Menu.Completions.Meta = bg:ansigray ansiwhite
+Token.Menu.Completions.MultiColumnMeta = bg:ansigray ansiwhite
+Token.Menu.Completions.ProgressButton = bg:ansiblack
+Token.Menu.Completions.ProgressBar = bg:ansiblue
+Token.SelectedText = ansiwhite bg:ansiblue
+Token.SearchMatch = ansiwhite bg:ansiblue
+Token.SearchMatch.Current = ansiwhite bg:ansired
+Token.Toolbar = ansiwhite
+Token.Toolbar.Off = ansigray
+Token.Toolbar.On = bg:ansiblack ansiwhite
 Token.Toolbar.Search = noinherit bold
 Token.Toolbar.Search.Text = nobold
 Token.Toolbar.System = noinherit bold
 Token.Toolbar.Arg = noinherit bold
 Token.Toolbar.Arg.Text = nobold
-Token.Toolbar.Transaction.Valid = "bg:ansiblack ansigreen bold"
-Token.Toolbar.Transaction.Failed = "bg:ansiblack ansired bold"
-
-# not documented
-# see https://github.com/dagwieers/pygments/blob/master/pygments/styles/default.py
-Token.Keyword = "ansigreen bold"
-Token.String = "ansired"
-Token.String.Other = "ansired"
-Token.Number = "ansired"
-
-# Favorite queries.
+Token.Toolbar.Transaction.Valid = bg:ansiblack ansigreen bold
+Token.Toolbar.Transaction.Failed = bg:ansiblack ansired bold
+Token.Keyword = ansigreen bold
+Token.String = ansired
+Token.String.Other = ansired
+Token.Number = ansired
 [favorite_queries]
-
-# ADD INDEX
-# $1 table name
-# $2 index name
 ikey = '''ALTER TABLE `$1`
 ADD INDEX `IDX_$1_$2` (`$2` ASC)'''
-
-# ADD FOREIGN KEY
-# $1 table name
-# $2 index name
-# $3 refererance table name name
 fkey = '''ALTER TABLE `$1`
 ADD CONSTRAINT `FK_$1_$2`
   FOREIGN KEY (`$2`)
   REFERENCES `$3` (`$2`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION'''
-
-# Use the -d option to reference a DSN.
+alter = table `posts` add primary key ID
 [alias_dsn]
-# example_dsn = mysql://[user[:password]@][host][:port][/dbname]
