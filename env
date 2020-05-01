@@ -54,3 +54,6 @@ fi
 # HiDPI
 export GDK_SCALE=1
 export GDK_DPI_SCALE=1.6
+
+export QT_QPA_PLATFORMTHEME=gtk3
+export QT_STYLE_OVERRIDE=gtk3
