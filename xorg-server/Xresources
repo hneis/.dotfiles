@@ -10,26 +10,32 @@
 ! red 167
 *.color1:       #d75f5f
 *.color9:       #d75f5f
+/* *.color9: #d787af */
 
 ! green 108
 *.color2:       #87AF87 
 *.color10:      #87AF87
+/* *.color10: #5faf5f */
 
 ! yellow 221
 *.color3:       #ffd75f
 *.color11:      #ffd75f
+/* *.color11: #d7af5f */
 
 ! blue 110
 *.color4:       #87afd7
 *.color12:      #87afd7
+/* *.color12: #729fcf */
 
 ! magenta 146
 *.color5:       #afafd7
 *.color13:      #afafd7
+/* *.color13:   #BB95B7 */
 
 ! cyan 75
 *.color6:       #afd7ff
 *.color14:      #afd7ff
+/* *.color14: #87afff */
 
 ! white 239 15
 *.color7:       #4E4E4E
