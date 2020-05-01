@@ -196,6 +196,11 @@ for file in split(glob("~/nvim/pluggedconf/*.nvimrc"), '\n')
     execute 'source' file
 endfor
 
+" source every plugin configs
+for file in split(glob("~/nvim/pluggedconf/hneisconf/*.nvimrc"), '\n')
+    execute 'source' file
+endfor
+
 if exists("g:did_load_filetypes")
   filetype off
   filetype plugin indent off
@@ -378,7 +383,7 @@ cnoremap w!! execute ':w suda://%'
 " +--------------+
 
 " colorscheme
-colo hypnos
+" colo hypnos
 
 " set the directory where the swap file will be saved
 set backupdir=~/nvim/backup//
