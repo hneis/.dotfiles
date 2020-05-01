@@ -37,7 +37,7 @@
   # git reviewone foo.js bar.js
   reviewone = !vim -p +\"tabdo Gdiff $REVIEW_BASE\" +\"let g:gitgutter_diff_base = '$REVIEW_BASE'\"
 [init]
-	templatedir = /home/hypnos/.dotfiles/git/templates
+	templatedir = /home/hneis/.dotfiles/git/templates
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [merge]
