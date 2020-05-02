@@ -378,7 +378,7 @@ cnoremap w!! execute ':w suda://%'
 " +--------------+
 
 " colorscheme
-" colo hypnos
+colo hypnos
 
 " set the directory where the swap file will be saved
 set backupdir=~/nvim/backup//
@@ -471,9 +471,4 @@ augroup END
 autocmd vimrc FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " }}}
 
-" {{{ Hneis config
-" source every hneis plugin configs
-for file in split(glob("~/nvim/pluggedconf/hneisconf/*.nvimrc"), '\n')
-    execute 'source' file
-endfor
-" }}} 
+execute 'source' '~/nvim/pluggedconf/hneis.nvimrc'
