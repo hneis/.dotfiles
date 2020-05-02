@@ -112,15 +112,3 @@ Plug 'kburdett/vim-nuuid'
 
 " twig
 Plug 'lumiliet/vim-twig', {'for': 'twig'}
-
-map <leader>' ysiw'<cr>
-map <leader>" ysiw"<cr>
-autocmd vimrc FileType python,ruby,rspec,javascript,go,html,php,eruby,coffee,haml nmap <buffer> <leader>D :exec "DevDocs " . fnameescape(expand('<cword>'))<CR>
-autocmd vimrc BufWrite *.jsx,*.vue,*.twig,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
-
-
-augroup numbertoggle
-    autocmd!
-    autocmd BufEnter,FocusGained,InsertLeave * if &filetype !=# "tagbar" | set relativenumber | endif
-    autocmd BufLeave,FocusLost,InsertEnter   * setlocal norelativenumber
-augroup END
