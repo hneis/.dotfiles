@@ -196,11 +196,6 @@ for file in split(glob("~/nvim/pluggedconf/*.nvimrc"), '\n')
     execute 'source' file
 endfor
 
-" source every plugin configs
-for file in split(glob("~/nvim/pluggedconf/hneisconf/*.nvimrc"), '\n')
-    execute 'source' file
-endfor
-
 if exists("g:did_load_filetypes")
   filetype off
   filetype plugin indent off
@@ -475,3 +470,10 @@ augroup END
 
 autocmd vimrc FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " }}}
+
+" {{{ Hneis config
+" source every hneis plugin configs
+for file in split(glob("~/nvim/pluggedconf/hneisconf/*.nvimrc"), '\n')
+    execute 'source' file
+endfor
+" }}} 
