@@ -182,7 +182,7 @@ Plug 'tpope/vim-scriptease'
 " Custom plugin - working on it
 Plug '~/workspace/vim-plugins/go-analyzer.vim'
 
-source ~/nvim/hneis.nvimrc
+source ~/nvim/hneis-plugins.nvimrc
 call plug#end()
 " }}}
 " Plugin Config ---------------------- {{{
