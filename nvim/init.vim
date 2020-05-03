@@ -120,24 +120,12 @@ Plug 'tpope/vim-dispatch', {'for': 'clojure'}
 " Add tmux completion for COC
 " Plug 'wellle/tmux-complete.vim'
 
-" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install'}
-Plug 'Shougo/neco-vim'
-Plug 'neoclide/coc-neco'
-" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" golang development
+" Golang
 Plug 'fatih/vim-go', {'for': 'go'} " general plugin
 Plug 'godoctor/godoctor.vim', {'for': 'go'} " refactoring
 Plug 'sebdah/vim-delve', {'for': 'go'} " debugger
 
-" generate uuid
-Plug 'kburdett/vim-nuuid'
-
-" twig
-Plug 'lumiliet/vim-twig', {'for': 'twig'}
-
-" javascript plugins
+" Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'mxw/vim-jsx' " For react
@@ -150,7 +138,7 @@ Plug 'liuchengxu/vista.vim' " Use LSP
 " Nerdtree + modifications 
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind']} | Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-" status bar
+" Status bar
 Plug 'itchyny/lightline.vim'
 
 " Undo tree display
@@ -234,10 +222,6 @@ let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-html',
     \ 'coc-yaml',
-    \ 'coc-vetur',
-    \ 'coc-highlight',
-    \ 'coc-dictionary',
-    \ 'coc-syntax', 
     \]
 " \ 'coc-markmap',
 " \ 'coc-sh',
@@ -370,8 +354,7 @@ nnoremap <silent> <leader><f5> :vsplit $MYVIMRC<CR>
 nnoremap <silent> <leader><f6> :source $MYVIMRC<CR>
 
 " delete trailing space when saving files
-" autocmd vimrc BufWrite *.php,*.js,*.jsx,*.vue,*.twig,*.html,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
-autocmd vimrc BufWrite *.jsx,*.vue,*.twig,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
+autocmd vimrc BufWrite *.php,*.js,*.jsx,*.vue,*.twig,*.html,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
 
 " Simple Zoom / Restore window (like Tmux)
 nnoremap <silent><leader>z :call general#ZoomToggle()<CR>
@@ -395,7 +378,7 @@ cnoremap w!! execute ':w suda://%'
 " +--------------+
 
 " colorscheme
-"colo hypnos
+colo hypnos
 
 " set the directory where the swap file will be saved
 set backupdir=~/nvim/backup//
@@ -481,9 +464,8 @@ set diffopt+=vertical
 
 augroup numbertoggle
   autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * if &filetype !=# "tagbar" | set relativenumber | endif
-  autocmd BufLeave,FocusLost,InsertEnter   * setlocal norelativenumber
-  autocmd BufEnter,FocusGained,InsertLeave NERD_tree_* setlocal norelativenumber
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
 autocmd vimrc FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
