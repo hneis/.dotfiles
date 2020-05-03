@@ -24,7 +24,7 @@ map zh zH
 " nnoremap <silent> <leader>Q gwip
 
 " Faster save/quite/close
-nmap <silent> <leader>ww :update<CR>
+" nmap <silent> <leader>ww :update<CR>
 nmap <silent> <leader>wq :quit<CR>
 
 nnoremap <leader>pp :%!python -m json.tool<cr>
