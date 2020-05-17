@@ -151,7 +151,7 @@ Plug 'derekelkins/agda-vim'
 " cheat.sh
 Plug 'dbeniamine/cheat.sh-vim'
 
-source ~/nvim/hneis-plugins.nvimrc
+source ~/.config/nvim/hneis-plugins.nvimrc
 call plug#end()
 " }}}
 " Plugin Config ---------------------- {{{
@@ -189,9 +189,9 @@ let g:coc_global_extensions = [
     \ 'coc-css', 
     \ 'coc-html',
     \ 'coc-json', 
+    \ 'coc-yaml',
+    \ 'coc-godot',
     \ 'coc-phpactor',
-    " \ 'coc-yaml',
-    " \ 'coc-godot',
     " \ 'coc-vetur',
     " \ 'coc-highlight',
     " \ 'coc-dictionary',
@@ -448,4 +448,4 @@ endif
 
 " }}}
 
-execute 'source' '~/nvim/pluggedconf/hneis.nvimrc'
+execute 'source' '~/.config/nvim/pluggedconf/hneis.nvimrc'

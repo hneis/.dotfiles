@@ -36,7 +36,6 @@
         "gosnippets/UltiSnips"
     ],
     "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips",
-    "suggest.snippetIndicator": " ►",
     "diagnostic.enable": false,
     "coc.preferences.formatOnSaveFiletypes": ["go", "clojure", "php"],
     "coc.preferences.hoverTarget": "float",
@@ -54,8 +53,5 @@
     "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", 
         "typescript.tsx", "vue" ],
     "vetur.validation.template": false,
-    "coc.preferences.formatOnSaveFiletypes": ["go", "javascript", "typescript", "typescriptreact", "json",
-        "javascriptreact", "typescript.tsx"],
-    "coc.preferences.hoverTarget": "float",
     "html.format.enable": true
 }
