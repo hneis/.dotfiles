@@ -59,8 +59,8 @@
     "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", 
         "typescript.tsx", "vue" ],
     "vetur.validation.template": false,
-    "coc.preferences.formatOnSaveFiletypes": ["go", "javascript", "typescript", "typescriptreact", "json",
-        "javascriptreact", "typescript.tsx"],
+    "coc.preferences.formatOnSaveFiletypes": ["go", "typescript", "typescriptreact", "json",
+        "typescript.tsx"],
     "coc.preferences.hoverTarget": "float",
     "html.format.enable": true
 }
