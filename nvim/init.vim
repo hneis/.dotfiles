@@ -354,7 +354,8 @@ nnoremap <silent> <leader><f5> :vsplit $MYVIMRC<CR>
 nnoremap <silent> <leader><f6> :source $MYVIMRC<CR>
 
 " delete trailing space when saving files
-autocmd vimrc BufWrite *.php,*.js,*.jsx,*.vue,*.twig,*.html,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
+" autocmd vimrc BufWrite *.php,*.js,*.jsx,*.vue,*.twig,*.html,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
+autocmd vimrc BufWrite *.vue,*.twig,*.html,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
 
 " Simple Zoom / Restore window (like Tmux)
 nnoremap <silent><leader>z :call general#ZoomToggle()<CR>
