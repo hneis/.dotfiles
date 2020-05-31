@@ -58,6 +58,5 @@
     "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", 
         "typescript.tsx", "vue" ],
     "vetur.validation.template": false,
-        "typescript.tsx"],
     "html.format.enable": true
 }
