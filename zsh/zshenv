@@ -66,3 +66,10 @@ export GIT_REVIEW_BASE=master # See gitconfig
 export PATH="$COMPOSER_HOME/vendor/bin:$PATH"                       # COMPOSER
 export PATH="$GOBIN:$PATH"                                          # GOBIN
 export PATH="$NPM_BIN:$PATH"                                        # NPM
+
+# See gitconfig
+export GIT_REVIEW_BASE=master
+
+# HiDPI
+export GDK_SCALE=1
+export GDK_DPI_SCALE=1.6
