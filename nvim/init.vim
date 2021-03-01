@@ -151,6 +151,7 @@ Plug 'derekelkins/agda-vim'
 " cheat.sh
 Plug 'dbeniamine/cheat.sh-vim'
 
+source ~/nvim/hneis-plugins.nvimrc
 call plug#end()
 " }}}
 " Plugin Config ---------------------- {{{
@@ -188,9 +189,13 @@ let g:coc_global_extensions = [
     \ 'coc-css', 
     \ 'coc-html',
     \ 'coc-json', 
-    \ 'coc-yaml', 
-    \ 'coc-godot', 
     \ 'coc-phpactor',
+    " \ 'coc-yaml',
+    " \ 'coc-godot',
+    " \ 'coc-vetur',
+    " \ 'coc-highlight',
+    " \ 'coc-dictionary',
+    " \ 'coc-syntax', 
     \]
 
 " \ 'coc-markmap',
@@ -322,7 +327,8 @@ nnoremap <silent> <leader><f5> :vsplit $MYVIMRC<CR>
 nnoremap <silent> <leader><f6> :source $MYVIMRC<CR>
 
 " delete trailing space when saving files
-autocmd vimrc BufWrite *.php,*.js,*.jsx,*.vue,*.twig,*.html,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
+" autocmd vimrc BufWrite *.php,*.js,*.jsx,*.vue,*.twig,*.html,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
+autocmd vimrc BufWrite *.jsx,*.vue,*.twig,*.sh,*.yaml,*.yml,*.clj,*.cljs,*.cljc :call general#DeleteTrailingWS()
 
 " Simple Zoom / Restore window (like Tmux)
 nnoremap <silent><leader>z :call general#ZoomToggle()<CR>
@@ -346,7 +352,7 @@ cnoremap w!! execute ':w suda://%'
 " +--------------+
 
 " colorscheme
-colorscheme hypnos
+"colorscheme hypnos
 
 " no swap file
 set noswapfile
@@ -431,8 +437,9 @@ set diffopt+=vertical
 
 augroup numbertoggle
   autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+  autocmd BufEnter,FocusGained,InsertLeave * if &filetype !=# "tagbar" | set relativenumber | endif
+  autocmd BufLeave,FocusLost,InsertEnter   * setlocal norelativenumber
+  autocmd BufEnter,FocusGained,InsertLeave NERD_tree_* setlocal norelativenumber
 augroup END
 
 autocmd vimrc FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -442,3 +449,5 @@ if executable('rg')
 endif
 
 " }}}
+
+execute 'source' '~/nvim/pluggedconf/hneis.nvimrc'
