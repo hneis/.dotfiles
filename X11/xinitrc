@@ -11,6 +11,9 @@ xkbcomp $HOME/.dotfiles/xorg-server/xkb.config $DISPLAY && xcape -t 500 -e "ISO_
 # personnalized keyboard keys
 [[ -f $XDG_CONFIG_HOME/X11/xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/xmodmap
 
+xkbcomp $HOME/.dotfiles/xorg-server/xkb.config $DISPLAY
+xcape -t 500 -e "ISO_Level3_Shift=Escape"
+
 # mpd
 [ ! -s ~/.config/mpd/pid ] && mpd
 
