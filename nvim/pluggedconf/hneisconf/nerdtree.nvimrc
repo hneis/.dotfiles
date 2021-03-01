@@ -15,7 +15,7 @@ endfunction
 
 " nmap <leader>n :call NERDTreeToggleInCurDir()<CR>
 nmap <leader>N :call NERDTreeToggleInCurDir()<CR>
-nmap <leader>e :call NERDTreeToggleInCurDir()<CR>
+nmap <leader>E :call NERDTreeToggleInCurDir()<CR>
 
 " don't display informations (type ? for help and so on)
 let g:NERDTreeMinimalUI = 1
