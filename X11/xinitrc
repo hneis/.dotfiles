@@ -5,8 +5,8 @@ urxvtd -o -q -f
 # merge .Xressources file
 [[ -f $XDG_CONFIG_HOME/X11/xresources ]] && xrdb -merge $XDG_CONFIG_HOME/X11/xresources
 
-# maps caps lock to the escape key AND left control key (for Neovim and because it's so sweet).
-setxkbmap -option 'caps:ctrl_modifier';xcape -e 'Caps_Lock=Escape'&
+# maps caps lock to escape for vim 
+xkbcomp $HOME/.dotfiles/xorg-server/xkb.config $DISPLAY && xcape -t 500 -e "ISO_Level3_Shift=Escape"
 
 # personnalized keyboard keys
 [[ -f $XDG_CONFIG_HOME/X11/xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/xmodmap
