@@ -130,12 +130,6 @@ function! TagbarStatusFunc(current, sort, fname, ...) abort
     return lightline#statusline(0)
 endfunction
 
-" Syntastic can call a post-check hook, let's update lightline there
-" For more information: :help syntastic-loclist-callback
-function! SyntasticCheckHook(errors)
-    call lightline#update()
-endfunction
-
 let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline = 0
