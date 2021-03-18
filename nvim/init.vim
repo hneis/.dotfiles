@@ -144,7 +144,7 @@ Plug 'tpope/vim-scriptease' " Debug vimscript
 Plug 'derekelkins/agda-vim'
 
 " cheat.sh
-Plug 'dbeniamine/cheat.sh-vim'
+"Plug 'dbeniamine/cheat.sh-vim'
 
 source ~/.config/nvim/hneis-plugins.nvimrc
 call plug#end()

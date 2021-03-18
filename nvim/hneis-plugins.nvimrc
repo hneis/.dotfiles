@@ -4,7 +4,7 @@ Plug 'morhetz/gruvbox'
 Plug 'godlygeek/tabular'
 
 " HTML
-Plug 'mattn/emmet-vim', { 'for': 'html' }
+Plug 'mattn/emmet-vim'
 Plug 'vim-scripts/HTML-AutoCloseTag'
 "TODO check
 "Plug 'hail2u/vim-css3-syntax'
@@ -21,11 +21,6 @@ Plug 'tell-k/vim-autopep8'
 
 " post install (yarn install | npm install)
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
-" let g:fromatterpath= ['/home/hneis/.node_modules/bin/']
-
-"Bootstrap
-Plug 'jvanja/vim-bootstrap4-snippets'
 
 " generate uuid
 Plug 'kburdett/vim-nuuid'

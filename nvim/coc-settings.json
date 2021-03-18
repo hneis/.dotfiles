@@ -53,10 +53,9 @@
     "suggest.echodocSupport": true,
     "suggest.maxCompleteItemCount": 20,
     "prettier.singleQuote": true,
-    "prettier.semi": false,
+    "prettier.semi": true,
     "eslint.autoFixOnSave": true,
-    "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", 
-        "typescript.tsx", "vue" ],
-    "vetur.validation.template": false,
-    "html.format.enable": true
+    "vetur.validation.template": true,
+    "html.format.enable": true,
+    "vetur.trace.server": "verbose"
 }

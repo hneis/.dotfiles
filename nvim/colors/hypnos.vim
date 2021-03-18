@@ -1,4 +1,4 @@
-let g:colors_name = 'hypnos'
+let g:colors_name = 'gruvbox'
 
 " General
 hi LineNr ctermfg=251 ctermbg=236 cterm=NONE

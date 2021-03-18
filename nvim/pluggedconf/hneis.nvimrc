@@ -80,3 +80,5 @@ let $GIT_ASKPASS = 'no'
 let g:LanguageClient_serverCommands = {
     \ 'vue': ['vls']
     \ }
+
+set redrawtime=10000
