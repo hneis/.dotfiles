@@ -4,7 +4,7 @@ for file in split(glob('~/.config/nvim/pluggedconf/hneisconf/*.nvimrc'), '\n')
 endfor
 
 "UPPERCASE and lowercase conversion
-nnoremap g^ gUiW
+"nnoremap g^ gUiW
 " nnoremap gv guiW
 
 " go to first and last char of line
