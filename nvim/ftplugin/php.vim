@@ -5,6 +5,7 @@ endfor
 
 " write ctags each time we save files (& for asynchronously)
 " autocmd php BufWritePost *.php silent! !eval '[ -f ".git/hooks/ctags" ] && .git/hooks/ctags' &
+"autocmd php BufWritePost *.php silent! !eval '[ -f "`git rev-parse --git-dir`/hooks/ctags" ] && `git rev-parse --git-dir`/hooks/ctags' &
 
 " php docs
 let g:pdv_template_dir = $XDG_CONFIG_HOME .'/nvim/plugged/pdv/templates'
