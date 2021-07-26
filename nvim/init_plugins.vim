@@ -143,5 +143,6 @@ Plug 'tpope/vim-scriptease' " Debug vimscript
 " Agda
 " Plug 'derekelkins/agda-vim'
 
+source ~/.dotfiles/nvim/hneis-plugins.nvimrc
 call plug#end()
 " }}}
