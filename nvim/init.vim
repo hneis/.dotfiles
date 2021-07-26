@@ -461,9 +461,8 @@ set shada=!,'100,<50,s100,h
 " autocmd BufWrite * echom "Save only from time to time!"
 augroup numbertoggle
   autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * if &filetype !=# "tagbar" | set relativenumber | endif
-  autocmd BufLeave,FocusLost,InsertEnter   * setlocal norelativenumber
-  autocmd BufEnter,FocusGained,InsertLeave NERD_tree_* setlocal norelativenumber
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
 " autocmd vimrc FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
