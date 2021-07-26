@@ -14,6 +14,8 @@ xkbcomp $HOME/.dotfiles/xorg-server/xkb.config $DISPLAY && xcape -t 500 -e "ISO_
 xkbcomp $HOME/.dotfiles/xorg-server/xkb.config $DISPLAY
 xcape -t 500 -e "ISO_Level3_Shift=Escape"
 
+xinput set-prop 11 'libinput Natural Scrolling Enabled' 1
+
 # mpd
 [ ! -s ~/.config/mpd/pid ] && mpd
 
