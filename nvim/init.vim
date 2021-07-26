@@ -126,10 +126,10 @@ Plug 'Phantas0s/go-analyzer.vim' " Custom plugin
 " Plug '$XDG_CONFIG_HOME/workspace/vim-plugins/go-analyzer.vim'
 
 " Javascript
-" Plug 'pangloss/vim-javascript'
-" Plug 'leafgarland/typescript-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 " Plug 'mxw/vim-jsx' " For react
-" Plug 'posva/vim-vue' " For Vue
+Plug 'posva/vim-vue' " For Vue
 
 " GDScript (Godot Game Engine)
 " Plug 'calviken/vim-gdscript3'
