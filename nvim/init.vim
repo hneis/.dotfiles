@@ -146,7 +146,7 @@ Plug 'derekelkins/agda-vim'
 " cheat.sh
 "Plug 'dbeniamine/cheat.sh-vim'
 
-source ~/.config/nvim/hneis-plugins.nvimrc
+source ~/.dotfiles/nvim/hneis-plugins.nvimrc
 call plug#end()
 " }}}
 " Plugin Config ---------------------- {{{

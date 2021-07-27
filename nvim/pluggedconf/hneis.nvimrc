@@ -1,5 +1,5 @@
 " source every hneis plugin configs
-for file in split(glob('~/.config/nvim/pluggedconf/hneisconf/*.nvimrc'), '\n')
+for file in split(glob('~/.dotfiles/nvim/pluggedconf/hneisconf/*.nvimrc'), '\n')
     execute 'source' file
 endfor
 
