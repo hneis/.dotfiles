@@ -473,4 +473,6 @@ augroup END
 
 " }}}
 
-execute 'source' '~/.config/nvim/pluggedconf/hneis.nvimrc'
+execute 'source' '~/.dotfiles/nvim/pluggedconf/hneis.nvimrc'
+autocmd BufEnter *.{vue,js,ts,jsx,tsx} :syntax sync fromstart
+:set redrawtime=10000
