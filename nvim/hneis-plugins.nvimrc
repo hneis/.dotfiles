@@ -20,7 +20,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'tell-k/vim-autopep8'
 
 " post install (yarn install | npm install)
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 " generate uuid
 Plug 'kburdett/vim-nuuid'
@@ -61,3 +61,7 @@ Plug 'lumiliet/vim-twig', {'for': 'twig'}
 "Plug 'FooSoft/vim-argwrap'
 
 " Plug 'Yggdroot/indentLine'
+
+Plug 'editorconfig/editorconfig-vim'
+" TODO CHEK
+"Plug 'dense-analysis/ale'

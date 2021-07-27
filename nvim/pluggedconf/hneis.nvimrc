@@ -82,3 +82,6 @@ let g:LanguageClient_serverCommands = {
     \ }
 
 set redrawtime=10000
+
+
+ nmap <silent> <leader>p :!eslint --fix %<CR>
