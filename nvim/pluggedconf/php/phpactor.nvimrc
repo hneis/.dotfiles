@@ -30,7 +30,7 @@ nnoremap <buffer><leader>rei :call phpactor#ClassInflect()<cr>
 " Extract method
 xnoremap <buffer><silent><leader>rem :<C-U>call phpactor#ExtractMethod()<CR>
 "
-autocmd php BufWritePost *.php silent! PhpactorImportMissingClasses
+"autocmd php BufWritePost *.php silent! PhpactorImportMissingClasses
 
 function! PHPModify(transformer)
     normal! ggdG

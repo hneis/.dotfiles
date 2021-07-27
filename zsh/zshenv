@@ -61,7 +61,7 @@ export PATH="$GOBIN:$PATH"                                          # GOBIN
 export PATH="$NPM_BIN:$PATH"                                        # NPM
 
 # Cloud
-source $CLOUD/development/env
+# source $CLOUD/development/env
 
 # HiDPI
 export GDK_SCALE=1

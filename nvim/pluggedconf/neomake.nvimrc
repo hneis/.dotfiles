@@ -52,7 +52,7 @@ let g:neomake_php_phpcs_maker = {
             \ }
 
 let g:neomake_php_phpstan_maker = {
-            \ 'args': ['analyse', '--error-format', 'raw', '--no-progress', '--level', '7'],
+            \ 'args': ['analyse', '--error-format', 'raw', '--no-progress', '--level', '7', '--memory-limit', '512MB'],
             \ 'errorformat': '%W%f:%l:%m',
             \ 'postprocess': function('SetWarningType'),
             \ }
