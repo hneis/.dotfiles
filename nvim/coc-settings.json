@@ -58,6 +58,6 @@
     "prettier.semi": true,
     "eslint.autoFixOnSave": true,
     "vetur.validation.template": true,
-    "html.format.enable": true,
-    "vetur.trace.server": "verbose"
+    "vetur.trace.server": "verbose",
+    "html.format.enable": true
 }

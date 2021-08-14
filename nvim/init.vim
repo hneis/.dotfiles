@@ -11,11 +11,6 @@ augroup END
 " +----------------+
 
 source $VIMCONFIG/init_plugins.vim
-" Plugin Config ---------------------- {{{
-
-" +---------------+
-" | plugin config |
-" +---------------+
 
 " source every plugin configs
 for file in split(glob("$VIMCONFIG/pluggedconf/*.nvimrc"), '\n')
@@ -336,5 +331,3 @@ augroup END
 " }}}
 
 execute 'source' '~/.dotfiles/nvim/pluggedconf/hneis.nvimrc'
-autocmd BufEnter *.{vue,js,ts,jsx,tsx} :syntax sync fromstart
-:set redrawtime=10000
