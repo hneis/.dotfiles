@@ -1,0 +1,25 @@
+session_name: Cyberpunch
+start_directory: ~/workspace/cyberpunch/
+windows:
+  - layout: main-horizontal
+    options:
+      main-pane-height: 30
+    panes:
+      - { shell_command: [cd crypto-punch-auth;] }
+    window_name: crypto-punch-auth
+  - layout: main-horizontal
+    panes:
+      - { shell_command: [cd crypto-punch-api;] }
+    window_name: crypto-punch-api
+  - layout: main-horizontal
+    panes:
+      - { shell_command: [cd crypto-punch-mobile;] }
+    window_name: crypto-punch-mobile
+  - layout: main-horizontal
+    panes:
+      - { shell_command: [cd crypto-punch-env;] }
+    window_name: crypto-punch-env
+  - layout: main-horizontal
+    panes:
+      - { shell_command: [cd crypto-punch-admin;] }
+    window_name: crypto-punch-admin

@@ -1,0 +1,21 @@
+session_name: Metrika
+start_directory: ~/workspace/metrika/
+windows:
+  - layout: main-horizontal
+    options:
+      main-pane-height: 30
+    panes:
+      - { shell_command: [cd metrika-crm; nvim] }
+    window_name: metrika-crm
+  - layout: main-horizontal
+    panes:
+      - { shell_command: [cd metrika-api; nvim] }
+    window_name: metrika-api
+  - layout: main-horizontal
+    panes:
+      - { shell_command: [cd metrika-env;make run-dev] }
+    window_name: metrika-env
+  - layout: main-horizontal
+    panes:
+      - { shell_command: [pgcli -h 172.23.0.4 -u realty], start_directory: ~/workspace/ }
+    window_name: metrika-pgcli

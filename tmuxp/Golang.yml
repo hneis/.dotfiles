@@ -1,0 +1,10 @@
+session_name: golang
+start_directory: ~/workspace/go/src/github.com/hneis/
+windows:
+    -
+        layout: main-vertical
+        panes:
+            - {shell_command: [nvim]}
+            - {shell_command: [echo hey]}
+            - {shell_command: [echo hello]}
+        window_name: nvim

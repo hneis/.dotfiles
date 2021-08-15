@@ -1,0 +1,27 @@
+session_name: asujs
+start_directory: ~/workspace/asujs/asu-local/
+windows:
+    -
+        layout: main-horizontal
+        options:
+            main-pane-height: 30
+        panes:
+            - {shell_command: [nvim],
+               start_directory: ~/workspace/asujs/asu-local/release/}
+        window_name: asu
+    -
+        layout: main-horizontal
+        panes:
+            - {shell_command: [nvim],
+               start_directory: ~/workspace/asujs/asu-local/it-uk-site.local}
+        window_name: it-uk-site
+    -
+        layout: main-horizontal
+        panes:
+            - {shell_command: ['echo pgcli'], start_directory: ~/workspace/}
+        window_name: pgcli
+    -
+        layout: main-horizontal
+        panes:
+            - {shell_command: ['echo mycli'], start_directory: ~/workspace/}
+        window_name: mycli
