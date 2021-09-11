@@ -81,7 +81,7 @@ let g:LanguageClient_serverCommands = {
     \ 'vue': ['vls']
     \ }
 
+autocmd BufEnter *.{vue,js,ts,jsx,tsx} :syntax sync fromstart
 set redrawtime=10000
-
 
  nmap <silent> <leader>p :!eslint --fix %<CR>
