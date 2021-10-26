@@ -13,7 +13,7 @@ Plug 'vim-scripts/HTML-AutoCloseTag'
 Plug 'vimwiki/vimwiki'
 
 " taskwarrior plugin to vim
-Plug 'blindFS/vim-taskwarrior'
+" Plug 'blindFS/vim-taskwarrior'
 
 " For python
 Plug 'Chiel92/vim-autoformat'
