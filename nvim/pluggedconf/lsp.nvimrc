@@ -75,6 +75,9 @@ local servers = {
     'phpactor',
     'eslint',
     'clojure_lsp',
+    'vuels',
+    'emmet_ls',
+    'cssmodules_ls',
 }
 
 for _, lsp in ipairs(servers) do
