@@ -4,7 +4,7 @@ Plug 'morhetz/gruvbox'
 Plug 'godlygeek/tabular'
 
 " HTML
-"Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 Plug 'vim-scripts/HTML-AutoCloseTag'
 "TODO check
 "Plug 'hail2u/vim-css3-syntax'
