@@ -101,7 +101,7 @@ URxvt*depth: 32
 URxvt.background: [85]#181815
 
 ! Might be used by tmux
-!URxvt*termName: rxvt-unicode
+URxvt*termName: rxvt-unicode
 
 ! Might be used by tmux?
 ! We dont need to source zprofile each time terminal is open
@@ -155,7 +155,7 @@ URxvt*tabbedex.tab-bg: 236
 URxvt*tabbedex.transparent:true
 URxvt*tabbedex.new-button: false
 
-URxvt.letterSpace: -1
+URxvt*letterSpace: -1
 
 !! For the Ctrl+Shift bindings work
 URxvt.iso14755: false
