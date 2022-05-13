@@ -70,6 +70,7 @@ Plug 'puremourning/vimspector' "Multi language debugger
 Plug 'tpope/vim-fugitive' "wrapper for git
 Plug 'mhinz/vim-signify' "  display git diff in the left gutter
 Plug 'rhysd/conflict-marker.vim' " Mark conflict
+Plug 'junegunn/gv.vim' " Display commits for project / file
 
 " +---------------------+
 " | Syntax highlighting |
