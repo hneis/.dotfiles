@@ -23,7 +23,7 @@ source $VIMCONFIG/init_plugins.vim
 
 " Load custom library for lua
 lua require('hypnos/kit')
-lua require('hypnos/status_line')
+"lua require('hypnos/status_line')
 lua require('hypnos/tab_line')
 lua require('hypnos/text_objects').basic_text_objects()
 lua require('hypnos/text_objects').indent_text_objects()
@@ -344,5 +344,6 @@ if executable('rg')
 endif
 
 " }}}
-
+autocmd User FugitiveChanged if exists("b:eleline_branch") | unlet b:eleline_branch | endif
+set laststatus=2
 execute 'source' '~/.dotfiles/nvim/pluggedconf/hneis.nvimrc'

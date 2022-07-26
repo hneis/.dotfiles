@@ -83,7 +83,8 @@
 /* URxvt.font: xft:SauceCodePro Nerd Font:size=10, xft:DejaVu Sans Mono:style=Medium:pixelsize=23:antialias=true */
 #URxvt.font: xft:JetBrainsMono Nerd Font:pixelsize=25, xft:Inconsolata Nerd Font:style=Bold::pixelsize=26:antialias=true
 #URxvt.font: xft:JetBrainsMono Nerd Font:pixelsize=16, xft:Inconsolata Nerd Font:style=Bold::pixelsize=16:antialias=true
-URxvt.font: xft:JetBrainsMono Nerd Font:size=11, pixelsize=25, xft:Inconsolata Nerd Font:style=Bold:size=11,pixelsize=26:antialias=true
+#URxvt.font: xft:JetBrainsMono Nerd Font:size=11, pixelsize=25, xft:Inconsolata Nerd Font:style=Bold:size=11,pixelsize=26:antialias=true
+URxvt.font: xft:JetBrainsMono Nerd Font:size=11, pixelsize=25
 
 /* URxvt*font: xft:Source Code Pro Medium:style=Regular:pixelsize=24:antialias=true:minspace=False, xft:Inconsolata Nerd Font:style=Medium:pixelsize=24:antialias=true, xft:Droid Sans Mono:size=9:antialias=true */
 
