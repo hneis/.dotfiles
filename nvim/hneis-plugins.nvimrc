@@ -5,19 +5,19 @@ Plug 'godlygeek/tabular'
 
 " HTML
 " Plug 'mattn/emmet-vim'
-Plug 'vim-scripts/HTML-AutoCloseTag'
+" Plug 'vim-scripts/HTML-AutoCloseTag'
 "TODO check
 "Plug 'hail2u/vim-css3-syntax'
 
 " Take notes and keep todo lists in vim
-Plug 'vimwiki/vimwiki'
+" Plug 'vimwiki/vimwiki'
 
 " taskwarrior plugin to vim
 " Plug 'blindFS/vim-taskwarrior'
 
 " For python
-Plug 'Chiel92/vim-autoformat'
-Plug 'tell-k/vim-autopep8'
+" Plug 'Chiel92/vim-autoformat'
+" Plug 'tell-k/vim-autopep8'
 
 " post install (yarn install | npm install)
 " Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
@@ -26,7 +26,7 @@ Plug 'tell-k/vim-autopep8'
 Plug 'kburdett/vim-nuuid'
 
 " twig
-Plug 'lumiliet/vim-twig', {'for': 'twig'}
+" Plug 'lumiliet/vim-twig', {'for': 'twig'}
 
 " Begin move My plugins
 "Plug 'jiangmiao/auto-pairs'
@@ -68,5 +68,5 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Plug 'leafOfTree/vim-vue-plugin'
 Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
+"Plug 'leafgarland/typescript-vim'
 Plug 'posva/vim-vue' " For Vue
