@@ -1,6 +1,47 @@
 
 ! special 253 234 238
 *.foreground:   #EEEEEE
+Xft.dpi: 163
+/* ! special 251 234 251 */
+/* *.foreground:   #C6C6C6 */
+/* *.background:   #1C1C1C */
+/* *.cursorColor:  #C6C6C6 */
+
+/* ! black 236 238 */
+/* *.color0:       #303030 */
+/* *.color8:       #444444 */
+
+/* ! red 167 */
+/* *.color1:       #d75f5f */
+/* *.color9:       #d75f5f */
+
+/* ! green 108 */
+/* *.color2:       #87AF87 */ 
+/* *.color10:      #87AF87 */
+
+/* ! yellow 221 */
+/* *.color3:       #ffd75f */
+/* *.color11:      #ffd75f */
+
+/* ! blue 109 */
+/* *.color4:       #87AFAF */
+/* *.color12:      #87AFAF */
+
+/* ! magenta 146 */
+/* *.color5:       #afafd7 */
+/* *.color13:      #afafd7 */
+
+/* ! cyan 109 */
+/* *.color6:       #87afaf */
+/* *.color14:      #87afaf */
+
+/* ! white 239 15 */
+/* *.color7:       #4E4E4E */
+/* *.color15:      #ffffff */
+
+
+! special 251 234 251
+*.foreground:   #C6C6C6
 *.background:   #1C1C1C
 *.cursorColor:  #444444
 
@@ -40,7 +81,12 @@
 !! rxvt-unicode !!
 !!!!!!!!!!!!!!!!!!
 
-URxvt*font: xft:Inconsolata Nerd Font:style=Medium:size=14:pixelsize=16:antialias=true
+/* URxvt.font: xft:SauceCodePro Nerd Font:size=10, xft:DejaVu Sans Mono:style=Medium:pixelsize=23:antialias=true */
+#URxvt.font: xft:JetBrainsMono Nerd Font:pixelsize=25, xft:Inconsolata Nerd Font:style=Bold::pixelsize=26:antialias=true
+#URxvt.font: xft:JetBrainsMono Nerd Font:pixelsize=16, xft:Inconsolata Nerd Font:style=Bold::pixelsize=16:antialias=true
+URxvt.font: xft:JetBrainsMono Nerd Font:size=11, pixelsize=25, xft:Inconsolata Nerd Font:style=Bold:size=11,pixelsize=26:antialias=true
+
+/* URxvt*font: xft:Source Code Pro Medium:style=Regular:pixelsize=24:antialias=true:minspace=False, xft:Inconsolata Nerd Font:style=Medium:pixelsize=24:antialias=true, xft:Droid Sans Mono:size=9:antialias=true */
 
 URxvt*borderLess: false
 URxvt*externalBorder: 0
@@ -55,7 +101,7 @@ URxvt*depth: 32
 URxvt.background: [85]#181815
 
 ! Might be used by tmux
-URxvt*termName: rxvt-unicode
+!URxvt*termName: rxvt-unicode
 
 ! Might be used by tmux?
 ! We dont need to source zprofile each time terminal is open
@@ -108,3 +154,9 @@ URxvt*tabbedex.tab-fg: bold 167
 URxvt*tabbedex.tab-bg: 236
 URxvt*tabbedex.transparent:true
 URxvt*tabbedex.new-button: false
+
+URxvt.letterSpace: -1
+
+!! For the Ctrl+Shift bindings work
+URxvt.iso14755: false
+URxvt.iso14755_52: false

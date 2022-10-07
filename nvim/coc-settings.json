@@ -27,7 +27,7 @@
     },
 
     "php-cs-fixer.rules": "@Symfony,ordered_imports,no_unused_imports",
-    "php-cs-fixer.config": ".php_cs.dist",
+    "php-cs-fixer.config": ".php_cs.dist.php",
     "php-cs-fixer.allowRisky": true,
 
     "json.format.enable": true,
@@ -37,10 +37,15 @@
         "gosnippets/UltiSnips"
     ],
     "snippets.userSnippetsDirectory": "~/.config/nvim/UltiSnips",
-    "suggest.snippetIndicator": " ►",
+    "suggest.snippetIndicator": "",
     "diagnostic.enable": false,
     "coc.preferences.formatOnSaveFiletypes": ["go", "clojure", "php"],
     "coc.preferences.hoverTarget": "float",
     "tree.key.close": "",
-    "html.format.enable": true
+    "html.format.enable": true,
+
+    "diagnostic.errorSign"  : "ﮊ",
+    "diagnostic.warningSign": "",
+    "diagnostic.infoSign"   : "",
+    "diagnostic.hintSign"   : "ﯦ"
 }

@@ -20,6 +20,11 @@ let maplocalleader = "\<space>"
 
 " Source plugin definition file
 source $VIMCONFIG/init_plugins.vim
+" Plugin Config ---------------------- {{{
+
+" +---------------+
+" | plugin config |
+" +---------------+
 
 " Load custom library for lua
 lua require('hypnos/kit')
@@ -262,7 +267,7 @@ nnoremap <leader>V :Oexplore<cr>
 " +--------------+
 
 " colorscheme
-colorscheme hypnos
+"colorscheme hypnos
 
 " no swap file
 set noswapfile
@@ -342,3 +347,9 @@ set path=.,**,,
 if executable('rg')
     set grepprg=rg\ --vimgrep\ --smart-case
 endif
+
+" }}}
+
+execute 'source' '~/.dotfiles/nvim/pluggedconf/hneis.nvimrc'
+autocmd BufEnter *.{vue,js,ts,jsx,tsx} :syntax sync fromstart
+:set redrawtime=10000

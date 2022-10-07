@@ -141,4 +141,5 @@ Plug 'chrisbra/csv.vim'
 
 Plug 'tpope/vim-scriptease' " Debug vimscripts
 
+source ~/.dotfiles/nvim/hneis-plugins.nvimrc
 call plug#end()

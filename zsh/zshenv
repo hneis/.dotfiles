@@ -96,4 +96,13 @@ export PATH="$GOBIN:$PATH"                                          # GOBIN
 export PATH="$NPM_BIN:$PATH"                                        # NPM
 
 # Cloud
-source $CLOUD/development/env
+# source $CLOUD/development/env
+
+# HiDPI
+export GDK_SCALE=1
+export GDK_DPI_SCALE=1
+
+export QT_QPA_PLATFORMTHEME=gtk3
+export QT_STYLE_OVERRIDE=gtk3
+
+export PATH="/home/ferz/.gem/ruby/3.0.0/bin:$PATH"
