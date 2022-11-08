@@ -1,0 +1,2 @@
+s/\e[[0-9;]\+[mK]//g
+substitute(my_variable, '\e\[[0-9;]\+[mK]', '', 'g')
