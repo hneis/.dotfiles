@@ -1,10 +1,10 @@
 ---
 language_server_completion.trim_leading_dollar: true
-language_server_phpstan.level: 3
-language_server_phpstan.enabled: true
+# language_server_phpstan.level: 3
+# language_server_phpstan.enabled: true
 #language_server_psalm.enabled: true
 #language_server_php_cs_fixer.enabled: true
-language_server_phpstan.bin: "phpstan"
+# language_server_phpstan.bin: "phpstan"
 #language_server_psalm.bin: "/home/hneis/.config/composer/vendor/bin/psalm"
 #language_server_php_cs_fixer.bin: "/home/hneis/.config/composer/vendor/bin/php-cs-fixer"
 
