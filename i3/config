@@ -330,6 +330,8 @@ for_window [all] title_window_icon padding 3px
 
 # URxvt border
 for_window [class="URxvt*"] border pixel 1
+# kitty
+for_window [class="kitty"] border pixel 1
 
 # floating pop up automatically
 for_window [window_role="pop-up"] floating enable
