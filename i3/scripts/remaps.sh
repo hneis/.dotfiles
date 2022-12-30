@@ -4,9 +4,11 @@
 # Might be not necessary anymore (see xinitrc)
 
 # set the keyboard to mac
-setxkbmap us mac
+#setxkbmap us mac
 
 # maps caps lock to escape for vim (and ctrl)
-setxkbmap -option 'caps:ctrl_modifier' && xcape -e 'Caps_Lock=Escape' &
+#setxkbmap -option 'caps:ctrl_modifier' && xcape -e 'Caps_Lock=Escape' &
 
-xmodmap $XDG_CONFIG_HOME/.Xmodmap
+#xmodmap $XDG_CONFIG_HOME/.Xmodmap
+
+xkbcomp $HOME/.dotfiles/X11/xkb.config $DISPLAY && xcape -t 500 -e "ISO_Level3_Shift=Escape"
