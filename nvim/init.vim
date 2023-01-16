@@ -23,7 +23,7 @@ source $VIMCONFIG/init_plugins.vim
 
 " Load custom library for lua
 lua require('hypnos/kit')
-lua require('hypnos/status_line')
+"lua require('hypnos/status_line')
 lua require('hypnos/tab_line')
 lua require('hypnos/text_objects').basic_text_objects()
 lua require('hypnos/text_objects').indent_text_objects()
@@ -215,8 +215,8 @@ autocmd vimrc BufWritePost init.vim source $MYVIMRC
 " +--------------+
 
 " highlight the line which is longer than the defined margin (80 character)
-autocmd vimrc FileType php,js,vue,go,sh,md call matchadd('MaxLineChar', '\%80v', 10)
-autocmd vimrc FileType vim call matchadd('MaxLineChar', '\%120v', 100)
+"autocmd vimrc FileType php,js,vue,go,sh,md call matchadd('MaxLineChar', '\%80v', 100, 100)
+"autocmd vimrc FileType vim call matchadd('MaxLineChar', '\%120v', 100, 100)
 
 " Highlight briefly yanked text
 autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=300}
@@ -294,7 +294,7 @@ nnoremap <leader>V :Oexplore<cr>
 " +--------------+
 
 " colorscheme
-colorscheme hypnos
+"colorscheme hypnos
 
 " no swap file
 set noswapfile
@@ -384,3 +384,8 @@ set wildcharm=<C-Z>
 if executable('rg')
     set grepprg=rg\ --vimgrep\ --smart-case
 endif
+
+" }}}
+autocmd User FugitiveChanged if exists("b:eleline_branch") | unlet b:eleline_branch | endif
+set laststatus=2
+execute 'source' '~/.dotfiles/nvim/pluggedconf/hneis.nvimrc'

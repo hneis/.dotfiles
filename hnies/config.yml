@@ -1,0 +1,26 @@
+---
+export:
+  url: api.metrika-pro.ru/exports
+  partners:
+    - city: tyumen
+      id: 2264
+      aggregators:
+        - name: domclick
+          id: 695
+        - name: afy
+          id: 687
+        - name: yandex
+          id: 696
+        - name: cian
+          id: 689
+        - name: avito
+          id: 682
+    - city: spb
+      id: 2269
+      aggregators:
+        - name: yandex
+          id: 766
+        - name: avito
+          id: 767
+        - name: cian
+          id: 768

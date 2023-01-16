@@ -23,7 +23,8 @@ alias xpropc='xprop | grep WM_CLASS' # display xprop class
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index # directory stack
 
-alias kitty='kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty'
+#alias kitty='kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty'
+alias kitty='kitty -o allow_remote_control=yes --single-instance --listen-on unix:/tmp/mykitty'
 
 # +----+
 # | ls |
@@ -200,7 +201,9 @@ alias gco='git checkout '
 alias gl='git log --pretty=oneline'
 alias gr='git remote'
 alias grs='git remote show'
-alias glol='git log --graph --abbrev-commit --oneline --decorate'
+alias glo='git log --pretty="oneline"'
+alias glol='git log --graph --oneline --decorate'
+alias glol2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold cyan)%h%C(reset)%C(auto)%d%C(reset) %C(normal)%s%C(reset) %C(dim green)%an%C(reset) %C(dim blue)(%ar)%C(reset)'"
 alias gclean="git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d" # Delete local branch merged with master
 alias gblog="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:red)%(refname:short)%(color:reset) - %(color:yellow)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:blue)%(committerdate:relative)%(color:reset))'"                                                             # git log for each branches
 alias gsub="git submodule update --remote"                                                        # pull submodules

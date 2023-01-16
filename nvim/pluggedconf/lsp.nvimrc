@@ -75,6 +75,9 @@ local servers = {
     'phpactor',
     'eslint',
     'clojure_lsp',
+    'vuels',
+    'emmet_ls',
+    'cssmodules_ls',
 }
 
 for _, lsp in ipairs(servers) do
@@ -98,6 +101,58 @@ function OrgImports(wait_ms)
     end
   end
 end
+
+-- -- nvim-cmp setup
+-- local cmp = require 'cmp'
+-- cmp.setup {
+--     snippet = {
+--         expand = function(args)
+--             vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+--         end,
+--     },
+--     mapping = {
+--         ['<C-k>'] = cmp.mapping.select_prev_item(),
+--         ['<C-j>'] = cmp.mapping.select_next_item(),
+--         ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+--         ['<C-f>'] = cmp.mapping.scroll_docs(4),
+--         ['<C-c>'] = cmp.mapping.complete(),
+--         ['<C-e>'] = cmp.mapping.close(),
+--         ['<CR>'] = cmp.mapping.confirm {
+--             behavior = cmp.ConfirmBehavior.Replace,
+--             select = true,
+--         },
+--         -- ['<Tab>'] = function(fallback)
+--         --   if cmp.visible() then
+--         --     cmp.select_next_item()
+--         --   elseif luasnip.expand_or_jumpable() then
+--         --     luasnip.expand_or_jump()
+--         --   else
+--         --     fallback()
+--         --   end
+--         -- end,
+--         -- ['<S-Tab>'] = function(fallback)
+--         --   if cmp.visible() then
+--         --     cmp.select_prev_item()
+--         --   elseif luasnip.jumpable(-1) then
+--         --     luasnip.jump(-1)
+--         --   else
+--         --     fallback()
+--         --   end
+--         -- end,
+--     },
+--     sources = cmp.config.sources({
+--         { name = 'nvim_lsp' },
+--         -- { name = 'ultisnips' },
+--         -- { name = 'path' },
+--         { name = 'tmux' },
+--         { name = 'nvim_lua' },
+--         -- { name = "nvim_lsp_signature_help" },
+--     }, {
+--         -- { name = 'buffer' },
+--     })
+--   }
+-- 
+-- 
 EOF
 
 " Automatic go import

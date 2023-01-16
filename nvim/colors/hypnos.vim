@@ -16,7 +16,7 @@
 " 14    Yellow, LightYellow
 " 15    White
 
-let g:colors_name = 'hypnos'
+let g:colors_name = 'gruvbox'
 
 " Linking Group
 
