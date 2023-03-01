@@ -2,7 +2,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "phpactor/language-server": "^4.0",
         "friendsofphp/php-cs-fixer": "^3.14"
     },
     "config": {
