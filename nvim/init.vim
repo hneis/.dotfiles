@@ -406,4 +406,6 @@ if executable('rg')
     set grepprg=rg\ --vimgrep\ --smart-case
 endif
 
+set ttyfast " u got a fast terminal
+set lazyredraw " to avoid scrolling problems
 autocmd User FugitiveChanged if exists("b:eleline_branch") | unlet b:eleline_branch | endif
