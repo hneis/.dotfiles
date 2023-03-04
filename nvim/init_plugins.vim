@@ -100,7 +100,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 " | PHP |
 " +-----+
 
-Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
+Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o', 'tag': '2022.11.12'}
 
 " +------+
 " | LISP |
