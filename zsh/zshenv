@@ -105,3 +105,5 @@ source $CLOUD/development/env
 # HiDPI
 # export GDK_SCALE=1
 # export GDK_DPI_SCALE=1
+
+export PHP_CS_FIXER_IGNORE_ENV=true
