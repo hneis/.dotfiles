@@ -42,7 +42,6 @@ Plug 'simnalamburt/vim-mundo' " Undo tree display
 " +-----------+
 
 Plug 'liuchengxu/vista.vim' " Use LSP
-Plug 'nvim-lua/lsp-status.nvim'
 Plug 'knubie/vim-kitty-navigator', {'do': 'cp ./*.py ~/.config/kitty/'}
 
 " +--------------------+
