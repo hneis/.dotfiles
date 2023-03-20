@@ -81,6 +81,10 @@ exec --no-startup-id flameshot
 
 exec --no-startup-id /usr/bin/lxpolkit
 
+exec --no-startup-id rocketchat-desktop
+exec --no-startup-id telegram-desktop
+exec --no-startup-id viber
+
 # dunst keyboard shortcuts
 bindsym $mod+x exec dunstctl close-all
 bindsym Ctrl+BackSpace exec dunstctl history-pop
@@ -215,6 +219,7 @@ set $design "4: design"
 set $office "5: office"
 set $knowledge "6: knowledge"
 set $games "7: Games"
+set $chats "9: Chats"
 
 # switch to workspace
 bindsym $mod+1 workspace $terms
@@ -225,7 +230,7 @@ bindsym $mod+5 workspace $office
 bindsym $mod+6 workspace $knowledge
 bindsym $mod+7 workspace $games
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+9 workspace $chats
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
@@ -237,7 +242,7 @@ bindsym $mod+Shift+5 move container to workspace $office
 bindsym $mod+Shift+6 move container to workspace $knowledge
 bindsym $mod+Shift+7 move container to workspace $games
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+9 move container to workspace $chats
 bindsym $mod+Shift+0 move container to workspace 10
 
 # rename current workspace
@@ -280,6 +285,11 @@ assign [instance="libreoffice-calc"] → $knowledge
 
 assign [class="VirtualBox Manager" instance="virtualBox Manager"] → $vm
 assign [class="VirtualBox Machine" instance="virtualBox Machine"] → $vm
+
+
+assign [class="TelegramDesktop" instance="telegram-desktop"] → $chats
+assign [class="Rocket.Chat" instance="rocket.chat"] → $chats
+assign [class="ViberPC" instance="viber"] → $chats
 
 ####################
 # restart / reload #
@@ -378,7 +388,7 @@ exec --no-startup-id i3-msg workspace "$office"; exec joplin-desktop
 # exec --no-startup-id i3-msg workspace "$web"; exec brave
 
 ##########
-# DESIGN #
+# design #
 ##########
 
 # hide borders

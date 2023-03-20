@@ -1,37 +1,41 @@
 new_tab metrika-crm
 cd ~/workspace/metrika/metrika-crm
+title "metrika-crm"
+launch zsh
 # Set the layouts allowed in this tab
 enabled_layouts tall:bias=50;full_size=1
-layout tail
-launch --title "metrika-crm" zsh
+layout tall
 
 new_tab metrika-api
 cd ~/workspace/metrika/metrika-api
+title "metrika-api" 
 # Set the layouts allowed in this tab
 enabled_layouts tall:bias=50;full_size=1
 # Set the current layout
-layout tail
-launch --title "metrika-api" zsh 
+layout tall
+launch zsh 
 
 new_tab metrika-env
 cd ~/workspace/metrika/metrika-env
+title "metrika-env"
 # Set the layouts allowed in this tab
 enabled_layouts tall:bias=50;full_size=1
 # Set the current layout
-layout tail
-launch --title "metrika-env" zsh
+layout tall
+launch  zsh
 
 new_tab pgcli
+title "pgcli"
 # Set the layouts allowed in this tab
 enabled_layouts tall:bias=50;full_size=1
 # Set the current layout
-layout tail
+layout tall
 launch zsh
 
 new_tab dot 
 cd ~/.dotfiles
 # Set the layouts allowed in this tab
 enabled_layouts tall:bias=50;full_size=1
-layout tail
+layout tall
 # Set the current layout
 launch zsh
