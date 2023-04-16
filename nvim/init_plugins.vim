@@ -135,6 +135,9 @@ Plug 'chrisbra/csv.vim'
 " +-----------+
 
 Plug 'tpope/vim-scriptease' " Debug vimscripts
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'andersevenrud/nordic.nvim'
+Plug 'shaunsingh/nord.nvim'
 
 
 " +------------+

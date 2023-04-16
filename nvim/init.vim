@@ -13,8 +13,6 @@ augroup END
 " Configure leader key
 let mapleader = "\<space>"
 let maplocalleader = "\<space>"
-
-" +----------------+
 " | install plugin |
 " +----------------+
 
@@ -315,7 +313,9 @@ nnoremap <leader>V :Oexplore<cr>
 " +--------------+
 
 " colorscheme
-colorscheme hypnos
+"colorscheme hypnos
+" termguicolors true
+" colorscheme blue-moon
 
 " no swap file
 set noswapfile
@@ -406,6 +406,15 @@ if executable('rg')
     set grepprg=rg\ --vimgrep\ --smart-case
 endif
 
-set ttyfast " u got a fast terminal
-set lazyredraw " to avoid scrolling problems
+"set ttyfast " u got a fast terminal
+"set lazyredraw " to avoid scrolling problems
+"syntax sync minlines=100
+"syntax sync maxlines=240
+"set synmaxcol=800
+"set re=0
+"set nocursorcolumn
+"set nocursorline
+"set norelativenumber
+"syntax sync minlines=256
+"set redrawtime=10000
 autocmd User FugitiveChanged if exists("b:eleline_branch") | unlet b:eleline_branch | endif
