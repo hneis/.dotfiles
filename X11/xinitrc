@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# xrandr --dpi 144
+ xrandr --dpi 117
 # If launch in i3/config the scratchpads are not spawn (race condition?)
 urxvtd -o -q -f
 

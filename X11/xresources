@@ -1,6 +1,7 @@
 ! special 253 234 238
 *.foreground:   #EEEEEE
 /* Xft.dpi: 163 */
+Xft.dpi: 117 
 *.background:   #1C1C1C
 *.cursorColor:  #444444
 
