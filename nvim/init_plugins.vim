@@ -152,7 +152,6 @@ Plug 'nvim-treesitter/playground'
 
 Plug 'aduros/ai.vim'
 
-source ~/.dotfiles/nvim/hneis-plugins.nvimrc
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
