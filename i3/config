@@ -373,7 +373,7 @@ exec urxvtc -name bc_scratchpad -e bc -l
 
 
 # start softwares and command lines in workspaces
-exec --no-startup-id i3-msg workspace "$terms"; exec kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty --session metrika.session
+exec --no-startup-id i3-msg workspace "$terms"; exec kitty -o allow_remote_control=yes --single-instance --listen-on unix:@mykitty --session ~/.dotfiles/kitty/metrika.session
 exec --no-startup-id i3-msg workspace "$office"; exec joplin-desktop
 # exec --no-startup-id i3-msg workspace "$web"; exec brave
 

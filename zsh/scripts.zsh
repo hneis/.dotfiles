@@ -1,5 +1,21 @@
 #!/usr/bin/env zsh
 
+# Kitty functions
+function kt-native() {
+  export PROJECT_DIR=$1
+  kitty --session ~/.dotfiles/kitty/reason_native.conf
+}
+
+function kt-bs() {
+  export PROJECT_DIR=$1
+  kitty --session ~/.dotfiles/kitty/bucklescript.conf
+}
+
+function kt-js() {
+  export PROJECT_DIR=$1
+  kitty --session ~/.dotfiles/kitty/javascript.conf
+}
+
 screenres() {
     [ ! -z $1 ] && xrandr --current | grep '*' | awk '{print $1}' | sed -n "$1p"
 }
