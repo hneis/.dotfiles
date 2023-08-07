@@ -10,4 +10,4 @@ convert $img -scale 10% -scale 1000% $img
 #convert $img -blur 0x4 500% $img
 # convert $img $icon -gravity center -composite $img
 
-i3lock -u -i $img
+i3lock --keylayout 1 -u -i $img

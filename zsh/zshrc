@@ -153,7 +153,7 @@ if [[ "$(tty)" = "/dev/tty1" ]];
 then
     pgrep i3 || exec ssh-agent startx "$XDG_CONFIG_HOME/X11/xinitrc"
 else
-    ftmuxp
+#    ftmuxp
 fi
 
 # +---------+
@@ -188,3 +188,5 @@ source /usr/share/nvm/init-nvm.sh
 # +---------------------+
 
 source $DOTFILES/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+plugins=(docker docker-compose)
+autoload -U compinit && compinit

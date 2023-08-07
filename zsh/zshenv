@@ -99,3 +99,9 @@ export PATH="$NPM_BIN:$PATH"                                        # NPM
 
 # Cloud
 source $CLOUD/dotfiles/common/env
+source $CLOUD/dotfiles/env
+source $CLOUD/development/env
+
+# HiDPI
+# export GDK_SCALE=1
+# export GDK_DPI_SCALE=1

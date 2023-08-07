@@ -42,14 +42,8 @@ Plug 'simnalamburt/vim-mundo' " Undo tree display
 " +-----------+
 
 Plug 'liuchengxu/vista.vim' " Use LSP
-
-" +------+
-" | tmux |
-" +------+
-
-Plug 'tmux-plugins/vim-tmux' | Plug 'tmux-plugins/vim-tmux-focus-events' " syntax highlighting for tmux.conf + other cool options
-Plug 'christoomey/vim-tmux-navigator' " seemless navigation between vim windows / tmux pane
-Plug 'wellle/tmux-complete.vim' " Omni-completion from tmux pane (CTRL-X_CTRL_U)
+Plug 'nvim-lua/lsp-status.nvim'
+Plug 'knubie/vim-kitty-navigator', {'do': 'cp ./*.py ~/.config/kitty/'}
 
 " +--------------------+
 " | Project management |
@@ -70,6 +64,7 @@ Plug 'puremourning/vimspector' "Multi language debugger
 Plug 'tpope/vim-fugitive' "wrapper for git
 Plug 'mhinz/vim-signify' "  display git diff in the left gutter
 Plug 'rhysd/conflict-marker.vim' " Mark conflict
+Plug 'junegunn/gv.vim' " Display commits for project / file
 
 " +---------------------+
 " | Syntax highlighting |
@@ -155,4 +150,5 @@ Plug 'nvim-treesitter/playground'
 
 Plug 'aduros/ai.vim'
 
+source ~/.dotfiles/nvim/hneis-plugins.nvimrc
 call plug#end()
