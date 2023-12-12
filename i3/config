@@ -62,6 +62,8 @@ exec --no-startup-id syncthing &
 exec --no-startup-id unclutter
 
 # launch scripts
+# why start this module?
+exec --no-startup-id /etc/X11/xinit/xinitrc.d/40-libcanberra-gtk-module.sh
 exec --no-startup-id /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 
 # set the wallpaper
@@ -77,6 +79,13 @@ exec --no-startup-id dunst
 exec --no-startup-id numlockx on
 
 # exec --no-startup-id $I3_CONFIG/scripts/remaps.sh
+exec --no-startup-id flameshot 
+
+exec --no-startup-id /usr/bin/lxpolkit
+
+exec --no-startup-id rocketchat-desktop
+exec --no-startup-id telegram-desktop
+exec --no-startup-id viber
 
 # dunst keyboard shortcuts
 bindsym $mod+x exec dunstctl close-all
@@ -98,6 +107,7 @@ bindsym $mod+u border none
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Inconsolata 12
+#font pango:SauceCodePro Nerd Font, 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -110,6 +120,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -l 10 -fn Inconsolata -nb '$background' -nf '$foreground' -sb '$red1'
+#bindsym $mod+d exec dmenu_run -l 10 -fn 'SauceCodePro Nerd Font Mono' -nb '$background' -nf '$foreground' -sb '$red1'
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -150,10 +161,10 @@ bindsym $mod+Ctrl+k workspace prev
 ## Mod1 is the Alt key (run xmodmap to see a complete list)
 
 # split in horizontal orientation
-bindsym $mod+Mod1+v split v
+bindsym $mod+Mod1+v split v;exec notify-send 'tile vertically'
 
 # split in vertical orientation
-bindsym $mod+Mod1+h split h
+bindsym $mod+Mod1+s split h;exec notify-send 'tile horizontally'
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -193,7 +204,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # no focus following the mouse
-focus_follows_mouse no
+#focus_follows_mouse no
 
 # using the same workspace shortcut will focus on your last 
 workspace_auto_back_and_forth yes
@@ -212,6 +223,7 @@ set $design "4: design"
 set $office "5: office"
 set $knowledge "6: knowledge"
 set $games "7: Games"
+set $chats "9: Chats"
 
 # switch to workspace
 bindsym $mod+1 workspace $terms
@@ -222,7 +234,7 @@ bindsym $mod+5 workspace $office
 bindsym $mod+6 workspace $knowledge
 bindsym $mod+7 workspace $games
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+9 workspace $chats
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
@@ -234,7 +246,7 @@ bindsym $mod+Shift+5 move container to workspace $office
 bindsym $mod+Shift+6 move container to workspace $knowledge
 bindsym $mod+Shift+7 move container to workspace $games
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+9 move container to workspace $chats
 bindsym $mod+Shift+0 move container to workspace 10
 
 # rename current workspace
@@ -278,6 +290,11 @@ assign [instance="libreoffice-calc"] → $knowledge
 
 assign [class="VirtualBox Manager" instance="virtualBox Manager"] → $vm
 assign [class="VirtualBox Machine" instance="virtualBox Machine"] → $vm
+
+
+assign [class="TelegramDesktop" instance="telegram-desktop"] → $chats
+assign [class="Rocket.Chat" instance="rocket.chat"] → $chats
+assign [class="ViberPC" instance="viber"] → $chats
 
 ####################
 # restart / reload #
@@ -392,8 +409,7 @@ client.placeholder      $red1 $red1 $white2 $red1 $red1
 bar {
     status_command i3status --config $I3_CONFIG/i3status.conf
     # Disable all tray icons
-    tray_output none
-    # tray_output primary
+    tray_output primary
     separator_symbol "┃"
     colors {
         background $black1
