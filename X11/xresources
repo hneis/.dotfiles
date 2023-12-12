@@ -41,13 +41,13 @@ Xft.dpi: 117
 !! rxvt-unicode !!
 !!!!!!!!!!!!!!!!!!
 
-/*
 URxvt*font: xft:JetBrainsMono Nerd Font:size=11, pixelsize=25
 URxvt*boldFont: xft:JetBrainsMono Nerd Font:size=11, pixelsize=25
-*/
 
+/*
 URxvt*font: xft:Inconsolata Nerd Font Mono:style=Regular:size=13:antialias=true
 URxvt*boldFont: xft:Inconsolata Nerd Font Mono:style=Bold:size=13:antialias=true
+*/
 
 URxvt*borderLess: false
 URxvt*externalBorder: 0
