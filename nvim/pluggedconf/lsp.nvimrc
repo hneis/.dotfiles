@@ -76,7 +76,11 @@ local servers = {
     'phpactor',
     'eslint',
     'clojure_lsp',
-    'tsserver'
+    'tsserver',
+    'vuels',
+    'emmet_ls',
+    'cssmodules_ls',
+    'arduino_language_server',
 }
 
 for _, lsp in ipairs(servers) do
