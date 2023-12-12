@@ -41,13 +41,16 @@ Xft.dpi: 117
 !! rxvt-unicode !!
 !!!!!!!!!!!!!!!!!!
 
-URxvt*font: xft:JetBrainsMono Nerd Font:size=11, pixelsize=25
-URxvt*boldFont: xft:JetBrainsMono Nerd Font:size=11, pixelsize=25
+URxvt*font: xft:Inconsolata LGC Short:style=Regular:size=15, \
+            xft:Inconsolata LGC Nerd Font Mono:style=Regular:size=12:antialias=true, \
+            xft:JetBrainsMono Nerd Font:size=15, \
+            pixelsize=26
 
-/*
-URxvt*font: xft:Inconsolata Nerd Font Mono:style=Regular:size=13:antialias=true
-URxvt*boldFont: xft:Inconsolata Nerd Font Mono:style=Bold:size=13:antialias=true
-*/
+URxvt*boldFont: xft:Inconsolata LGC Short:style=Bold-Short:size=15, \
+            xft:Inconsolata LGC Nerd Font Mono:style=Bold:size=12:antialias=true, \
+            xft:JetBrainsMono Nerd Font:size=15, \
+            pixelsize=26
+
 
 URxvt*borderLess: false
 URxvt*externalBorder: 0
@@ -74,7 +77,8 @@ URxvt*termName: rxvt-unicode
 ! URxvt*hold: false
 URxvt*saveLines: 5000
 
-URxvt*letterSpace: -1
+URxvt.letterSpace: 0 
+URxvt.lineSpace: 6 
 
 ! +--------+
 ! | Scroll |
