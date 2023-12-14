@@ -41,12 +41,12 @@ Xft.dpi: 117
 !! rxvt-unicode !!
 !!!!!!!!!!!!!!!!!!
 
-URxvt*font: xft:Inconsolata LGC Short:style=Regular:size=15, \
+URxvt*font: xft:Inconsolata LGC Short:style=Regular:size=14, \
             xft:Inconsolata LGC Nerd Font Mono:style=Regular:size=12:antialias=true, \
             xft:JetBrainsMono Nerd Font:size=15, \
             pixelsize=26
 
-URxvt*boldFont: xft:Inconsolata LGC Short:style=Bold-Short:size=15, \
+URxvt*boldFont: xft:Inconsolata LGC Short:style=Bold-Short:size=14, \
             xft:Inconsolata LGC Nerd Font Mono:style=Bold:size=12:antialias=true, \
             xft:JetBrainsMono Nerd Font:size=15, \
             pixelsize=26
