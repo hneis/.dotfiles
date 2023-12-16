@@ -1,0 +1,7 @@
+npm install gopls -g
+npm install vls -g
+npm install emmet_ls -g
+npm install --global cssmodules-language-server
+npm install --global bash-language-server
+npm install --save vscode-css-languageservice
+
