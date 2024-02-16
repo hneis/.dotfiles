@@ -77,8 +77,8 @@ URxvt*termName: rxvt-unicode
 ! URxvt*hold: false
 URxvt*saveLines: 5000
 
-URxvt.letterSpace: 0 
-URxvt.lineSpace: 6 
+URxvt.letterSpace: 0
+URxvt.lineSpace: 6
 
 ! +--------+
 ! | Scroll |
@@ -126,3 +126,5 @@ URxvt*tabbedex.tab-fg: bold 167
 URxvt*tabbedex.tab-bg: 236
 URxvt*tabbedex.transparent:true
 URxvt*tabbedex.new-button: false
+
+URxvt.geometry: 80x-1

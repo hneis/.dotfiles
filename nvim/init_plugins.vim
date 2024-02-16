@@ -154,4 +154,17 @@ Plug 'nvim-treesitter/playground'
 
 Plug 'zbirenbaum/copilot.lua'
 
+" +--------+
+" | OpenAI |
+" +--------+
+
+Plug 'aduros/ai.vim'
+
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+
 call plug#end()

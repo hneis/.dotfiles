@@ -401,3 +401,5 @@ set wildcharm=<C-Z>
 if executable('rg')
     let &grepprg='rg --vimgrep --smart-case $*'
 endif
+
+set autoread
