@@ -98,4 +98,8 @@ export PATH="$GOBIN:$PATH"                                          # GOBIN
 export PATH="$NPM_BIN:$PATH"                                        # NPM
 
 # Cloud
-source $CLOUD/dotfiles/common/env
+# source $CLOUD/dotfiles/common/env
+
+
+#by xdg-ninja
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
