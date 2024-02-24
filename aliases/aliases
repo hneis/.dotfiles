@@ -216,6 +216,7 @@ alias dif="git diff --no-index"                                                 
 alias tmuxk='tmux kill-session -t'
 alias tmuxa='tmux attach -t'
 alias tmuxl='tmux list-sessions'
+alias tmux='tmux -2'
 
 # +-------+
 # | tmuxp |
@@ -300,3 +301,4 @@ alias ex='extract'
 
 alias ddg="duckduckgo"
 alias wiki="wikipedia"
+alias lazyvim="NVIM_APPNAME=lazynvim nvim"
