@@ -41,15 +41,19 @@ Xft.dpi: 117
 !! rxvt-unicode !!
 !!!!!!!!!!!!!!!!!!
 
-URxvt*font: xft:Inconsolata LGC Short:style=Regular:size=13, \
-            xft:Inconsolata LGC Nerd Font Mono:style=Regular:size=12:antialias=true, \
-            xft:JetBrainsMono Nerd Font:size=13, \
-            pixelsize=26
+!URxvt*font: xft:Inconsolata LGC Short:style=Regular:size=13, \
+!            xft:Inconsolata LGC Nerd Font Mono:style=Regular:size=12:antialias=true, \
+!            xft:Inconsolata Nerd Font:style=Regular:size=12,pixelsize=25:antialias=true, \
+!            xft:JetBrainsMono Nerd Font Mono:size=13,pixelsize=26
 
-URxvt*boldFont: xft:Inconsolata LGC Short:style=Bold-Short:size=13, \
-            xft:Inconsolata LGC Nerd Font Mono:style=Bold:size=12:antialias=true, \
-            xft:JetBrainsMono Nerd Font:size=13, \
-            pixelsize=26
+URxvt.font: xft:JetBrainsMono Nerd Font Mono:size=13, \
+            xft:Inconsolata LGC Short:style=Regular:size=13, \
+            xft:Inconsolata LGC Nerd Font Mono:style=Regular:size=13:antialias=true, \
+            xft:Inconsolata Nerd Font:style=Regular:size=13,pixelsize=25:antialias=true, \
+            xft:Symbola:style=Regular:size=10, \
+            xft:FontAwesome:style=Regular:size=10 \
+            xft:Twitter Color Emoji:style=Regular:size=10:minspace=True \
+            xft:Noto Color Emoji:style=Regular:size=10:minspace=True \
 
 
 URxvt*borderLess: false
@@ -78,7 +82,7 @@ URxvt*termName: rxvt-unicode
 URxvt*saveLines: 5000
 
 URxvt.letterSpace: 0
-URxvt.lineSpace: 6
+URxvt.lineSpace: 0
 
 ! +--------+
 ! | Scroll |
