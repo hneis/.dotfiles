@@ -425,6 +425,7 @@ bar {
         urgent_workspace   $red1 $red1 $white2
         binding_mode       $background $red2 $white2
     }
+    font pango:Inconsolata, Font Awesome 6 Free Solid 9
 }
 
 # lockscreen
