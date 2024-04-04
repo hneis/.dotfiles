@@ -4,6 +4,7 @@
 # EXPORT ENVIRONMENT VARIABLE #
 ###############################
 
+export TERMINAL='kitty'
 export TERM='xterm-256color'
 export DOTFILES="$HOME/.dotfiles"
 export WORKSPACE="$HOME/workspace"

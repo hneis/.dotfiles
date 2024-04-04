@@ -86,6 +86,7 @@ exec --no-startup-id /usr/bin/lxpolkit
 exec --no-startup-id rocketchat-desktop
 exec --no-startup-id telegram-desktop
 exec --no-startup-id viber
+exec i3-sensible-terminal --single-instance --name root
 
 # dunst keyboard shortcuts
 bindsym $mod+x exec dunstctl close-all
@@ -113,8 +114,8 @@ font pango:Inconsolata 9
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec i3-sensible-terminal --single-instance
+# bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -373,7 +374,7 @@ exec "$DOTFILES/bash/scripts/scratchpad.sh"
 # htop scratchpad
 for_window [instance="htop_scratchpad"] move to scratchpad, sticky enable, border none
 bindsym $mod+Shift+p [instance="htop_scratchpad"] scratchpad show
-exec urxvtc -name htop_scratchpad -e htop
+exec i3-sensible-terminal --name htop_scratchpad htop
 
 # keepass scratchpad
 for_window [class="KeePassXC"] move to scratchpad, sticky enable, floating enable, border none
@@ -383,7 +384,7 @@ exec keepassxc
 # bc scratchpad
 for_window [instance="bc_scratchpad"] move to scratchpad, sticky enable, border none
 bindsym $mod+Shift+b [instance="bc_scratchpad"] scratchpad show
-exec urxvtc -name bc_scratchpad -e bc -l
+exec i3-sensible-terminal --name bc_scratchpad  bc -l
 
 
 
