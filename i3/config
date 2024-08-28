@@ -2,6 +2,13 @@
 # colors #
 ##########
 
+# input "type:touchpad" {
+#     dwt enable
+#     tap enable
+#     middle_emulation enabled
+#     natural_scroll enabled
+#   }
+
 # get color from xressource configuration - variable_name xressource_color fallback
 
 # special
@@ -83,7 +90,8 @@ exec --no-startup-id flameshot
 
 exec --no-startup-id /usr/bin/lxpolkit
 
-exec --no-startup-id rocketchat-desktop
+# exec --no-startup-id rocketchat-desktop
+exec --no-startup-id gajim
 exec --no-startup-id telegram-desktop
 exec --no-startup-id viber
 exec i3-sensible-terminal --single-instance --name root
@@ -148,10 +156,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+# bindsym $mod+Shift+Left move left
+# bindsym $mod+Shift+Down move down
+# bindsym $mod+Shift+Up move up
+# bindsym $mod+Shift+Right move right
 
 bindsym $mod+Ctrl+h move workspace to output left
 bindsym $mod+Ctrl+l move workspace to output right
@@ -296,6 +304,7 @@ assign [class="VirtualBox Machine" instance="virtualBox Machine"] → $vm
 
 assign [class="TelegramDesktop" instance="telegram-desktop"] → $chats
 assign [class="Rocket.Chat" instance="rocket.chat"] → $chats
+assign [class="Gajim" instance="gajim"] → $chats
 assign [class="ViberPC" instance="viber"] → $chats
 
 ####################

@@ -154,7 +154,7 @@ fi
 
 if [[ "$(tty)" = "/dev/tty1" ]];
 then
-    pgrep i3 || exec ssh-agent startx "$XDG_CONFIG_HOME/X11/xinitrc"
+    pgrep Hyprland || exec ssh-agent Hyprland #startx "$XDG_CONFIG_HOME/X11/xinitrc"
 else
     ftmuxp
 fi

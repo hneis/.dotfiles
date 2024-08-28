@@ -166,6 +166,7 @@ alias port="netstat -tulpn | grep"
 # | Neovim |
 # +--------+
 
+alias nvim="NVIM_APPNAME=lazynvim /usr/bin/nvim"
 alias vim='nvim'
 alias vi='nvim'
 alias svim='sudoedit'
@@ -301,4 +302,3 @@ alias ex='extract'
 
 alias ddg="duckduckgo"
 alias wiki="wikipedia"
-alias lazyvim="NVIM_APPNAME=lazynvim nvim"
