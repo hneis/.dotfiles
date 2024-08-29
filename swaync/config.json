@@ -11,20 +11,20 @@
   "control-center-margin-right": 0,
   "control-center-margin-left": 0,
   "notification-2fa-action": true,
-  "notification-inline-replies": false,
+  "notification-inline-replies": true,
   "notification-icon-size": 24,
-  "notification-body-image-height": 100,
+  "notification-body-image-height": 200,
   "notification-body-image-width": 200,
-  "timeout": 6,
-  "timeout-low": 3,
+  "timeout": 12,
+  "timeout-low": 6,
   "timeout-critical": 0,
   "fit-to-screen": false,
   "control-center-width": 400,
-  "control-center-height": 720,
+  "control-center-height": 1220,
   "notification-window-width": 400,
   "keyboard-shortcuts": true,
-  "image-visibility": "always",
-  "transition-time": 200,
+  "image-visibility": "when available",
+  "transition-time": 100,
   "hide-on-clear": false,
   "hide-on-action": true,
   "script-fail-notify": true,
@@ -76,6 +76,14 @@
         {
           "label": "󰀝",
           "command": "bash -c $HOME/.config/hypr/scripts/AirplaneMode.sh"
+        },
+        {
+          "label": "󰝟",
+          "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+        },
+        {
+          "label": "󰂯",
+          "command": "blueman-manager"
         }
       ]
     }

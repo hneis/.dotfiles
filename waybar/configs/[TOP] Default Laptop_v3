@@ -2,7 +2,7 @@
 // ### DEFAULT v2 (Laptop)  - Top ### //
 {
   "include": "~/.config/waybar/modules",
-  // "layer": "top",
+  "layer": "top",
   //"mode": "dock",
   "exclusive": true,
   "passthrough": false,
@@ -14,8 +14,8 @@
   "margin-left": 8,
   "margin-right": 8,
   "modules-left": [
-    // "custom/menu",
-    // "custom/light_dark",
+    "custom/menu",
+    "custom/light_dark",
     // "custom/separator#dot-line",
     "power-profiles-daemon",
     "group/mobo_drawer",
@@ -37,12 +37,10 @@
   "modules-right": [
     // "network#speed",
     "group/connections",
-    // "custom/separator#line",
     "tray",
     "mpris",
     "group/audio",
-    // "custom/separator#line",
-    // "keyboard-state",
+    "keyboard-state",
     // "custom/keyboard",
     "custom/lock",
     // "custom/power",
